@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Add like first step
-      - name: Checkout / Setup Node / NPM-Cache
+      - name: Checkout / Setup Node / YARN-Cache
         uses: Travelonux/action-node-yarn-cache@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
