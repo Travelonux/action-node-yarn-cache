@@ -12,7 +12,7 @@ inputs:
   ref:
     required: false
     description: 'ref'
-    default: ''    
+    default: ''
   node-version:
     required: false
     description: 'node version'
@@ -26,7 +26,7 @@ runs:
         fetch-depth: ${{ inputs.fetch-depth }}
         token: ${{ inputs.token }}
         ref: ${{ inputs.ref }}
-        
+
     - name: Set up Node.js ${{ inputs.node-version }}
       uses: actions/setup-node@v3
       with:
